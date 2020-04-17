@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /* 这个写的质量很高，就是可以把最上面的那个header也写一下，那个可以练习一下多种不同大小的元素横向布局
+           另外可以试一下把这个card放到页面的最中间，学习一下垂直居中的方法
+           试着用sass也写一下，代码会更精简一些
+         */
         .card{
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         margin: auto;
@@ -17,6 +21,7 @@
         overflow:hidden;
         border-radius: 25px;
         padding:15PX;
+        /* 这个和上面有个padding重复了,写这种参数比较多的class可以按照 display position margin padding然后其他这样的顺序，不容易乱 */
         }
         .card:hover {
          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
@@ -51,6 +56,7 @@
            
            
         }
+        /* 这个名字起的不太好，很容易冲突，这个其实就可以用BEM的M，就是button__base--last */
         .last
         {
             margin-left: auto;
